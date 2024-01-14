@@ -26,7 +26,7 @@ def print_singly_linked_list(node, sep):
             print(sep, end='')
 
 def reversePrint(llist):
-    # Base case: if the current node is None (end of the list), return
+    # Base case: if the current node is None (end of the list), return https://www.youtube.com/watch?v=K7J3nCeRC80
     if not llist:
         return
     # Recursive call: move to the next node and call the function again in loop for llist not to always point at first element and llist.next to not always point to the second element you have to do something like llist=llist.next to move one by one over but that is not the case in recursion reversePrint(list.next) does move next one by one, and the print loc determines what order

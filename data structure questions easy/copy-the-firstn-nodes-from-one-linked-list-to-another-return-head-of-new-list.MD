@@ -26,9 +26,11 @@ def copy_first_n_nodes(head, n):
         # Break the loop if we've reached the end of the list
         if not head:
             return head2
-      ```
       
     return head2  # Return the head of the copied list
+```
+![alt text](https://github.com/EBYEMJC1/hackerrank-questions/blob/95dc740c55f0c1c8b76a45b6b691e580039ee0e3/data%20structure%20questions%20easy/images/Screenshot%202024-07-03%20214551.png "Logo Title Text 1")
+
 
 
 

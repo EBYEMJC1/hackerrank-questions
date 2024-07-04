@@ -1,3 +1,4 @@
+```python
 #constraints if nothng in original return none if list length is less than n return whole list
 class Node:
     def __init__(self, value=None, next_node=None):
@@ -25,7 +26,8 @@ def copy_first_n_nodes(head, n):
         # Break the loop if we've reached the end of the list
         if not head:
             return head2
-            
+      ```
+      
     return head2  # Return the head of the copied list
 
 

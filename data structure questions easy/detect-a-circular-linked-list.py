@@ -94,7 +94,26 @@ This code implements Floyd's algorithm to detect a cycle (loop) in a linked list
       0 - L(2*C1 - C2) = M + K
       L(C2 - 2*C1) = M + K
       
-      3(2-2*1)=2+1 IDK WHERE WE WENT WRONG
+      from Sam
+
+      M + L*C2 + K = 2(M + L * C1 + K)
+      M + K = 2M + 2(L*C1) + 2K - L*C2
+      M + K = 2(M + K) + 2(L*C1) - L*C2
+      (M+K) = 2L*C1 -L*C2
+      M + K = L*C2 - 2L*C1
+      M + K = L * (C2 - 2C1)
+    
+      Gonna do a bit of a leap here so let me know tmrw if this doesnt make sense:
+      M + K is an integer.
+      L is also an integer.
+      They're all integers because they're discrete # of steps in the list
+    
+      That means because M + K = L * (C2 - 2C1)
+      C2 - 2C1 is an integer which I'll rename C
+      M + K = L * C
+      M + K / L = C
+      And because we proved earlier C is an integer, M+K is a multiple of L
+      and knowing that m+k is a multiple of L means you will always land in the loop or within the confines of L
       ```
    - This tells us that `M + K` is a multiple of the loop length `L`. 
 
